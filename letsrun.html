@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+    <title></title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="run-script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="config.js"></script>
+    <script type="text/javascript" src="run-script.js"></script>
 
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="run-style.css">
+    <link rel="stylesheet" type="text/css" href="run-style.css">
 
 </head>
+
 <body>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Welcome to LetsRun!!</h4>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Welcome to LetsRun!!</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
-	<div class="container">
-	<h1>???<img src="runner.png"></h1>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="box col-xs-3 col-sm-3"><span class="number">1</span>
-				</div>
-				<div class="box col-xs-3 col-sm-3 col-sm-offset-1"><span class="number">2</span>
-				</div>
-				<div class="box col-xs-3 col-sm-3 col-sm-offset-1"><span class="number">3</span>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<div class="small col-xs-3 col-sm-3"><h5>Tell us how many miles you want to run!</h5>
-				</div>
-				<div class="small col-xs-3 col-sm-3 col-sm-offset-1"><h5>Get your routes!</h5>
-				</div>
-				<div class="small col-xs-3 col-sm-3 col-sm-offset-1"><h5>Run Around!!</h5>
-				</div>
-				<div class="col-sm-3">
-					<input type="text" placeholder="Enter amount of miles">
-				</div>
-				<div class="col-sm-3 col-sm-offset-1">
-					<input type="text" placeholder="Enter your location">
-				</div>
-			</div>
-			<!-- <div class="bord col-sm-12">
+    <div class="container">
+        <h1>???<img src="runner.png"></h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box col-xs-3 col-sm-3"><span class="number">1</span>
+                </div>
+                <div class="box col-xs-3 col-sm-3 col-sm-offset-1"><span class="number">2</span>
+                </div>
+                <div class="box col-xs-3 col-sm-3 col-sm-offset-1"><span class="number">3</span>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="small col-xs-3 col-sm-3">
+                    <h5>Tell us how many miles you want to run!</h5>
+                </div>
+                <div class="small col-xs-3 col-sm-3 col-sm-offset-1">
+                    <h5>Get your routes!</h5>
+                </div>
+                <div class="small col-xs-3 col-sm-3 col-sm-offset-1">
+                    <h5>Run Around!!</h5>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter amount of miles">
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <input type="text" placeholder="Enter your location">
+                </div>
+            </div>
+            <!-- <div class="bord col-sm-12">
 				
 				<div class="white col-sm-1">
 				</div>
@@ -86,12 +92,13 @@
 				</div>
 				
 			</div> -->
-			
-			
 
 
 
-		</div>
-	</div>
+
+
+        </div>
+    </div>
 </body>
+
 </html>
