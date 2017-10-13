@@ -1,8 +1,17 @@
 console.log("test")
 
 $(document).ready(function() {
+
+    // var googleMapsScript = document.head.children[1];
+    // googleMapsScript.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`);
+    // document.head.insertBefore(script, googleMapsScript);
+    var head = document.head
+    console.log(typeof(head.children[3]))
+    console.dir(head)
+        // head.childNodes.splice(0, 0, googleMapsScript)
+
     setTimeout(function() {
-        $('#myModal').modal('show')
+        // $('#myModal').modal('show')
     }, 2000)
 
     function initMap() {
@@ -17,7 +26,7 @@ $(document).ready(function() {
             map: map
         });
     }
-    var googleMapsScript = document.createElement('script');
+    var googleMapsScript = document.head.children[1];
     googleMapsScript.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`);
-    document.head.appendChild(googleMapsScript);
+
 })

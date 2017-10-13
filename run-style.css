@@ -3,6 +3,7 @@ body {
     background: url("images/background.jpg") no-repeat center;
     width: 100vw;
     height: 100vh;
+    z-index: -2;
 }
 
 #map {
@@ -42,6 +43,7 @@ img {
     /* border: 1px solid black; */
     height: 250px;
     background-color: #abbbd6;
+    z-index: -1;
 }
 
 .small {
