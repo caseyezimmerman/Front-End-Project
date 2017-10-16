@@ -1,6 +1,6 @@
 body {
     background-color: #d8d8d8;
-    /* background: url("images/background.jpg") no-repeat center; */
+    background: url("images/background.jpg") no-repeat center;
     width: 100vw;
     height: 100vh;
     z-index: -2;

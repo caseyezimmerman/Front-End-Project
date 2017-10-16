@@ -32,5 +32,4 @@ $(document).ready(function() {
 
     var googleMapsScript = document.head.children[1];
     googleMapsScript.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`);
-
 })
